@@ -1,0 +1,9 @@
+[ 16%] Building CXX object CMakeFiles/flashcore_lib.dir/src/flashcore.cpp.o
+[ 33%] Linking CXX static library libflashcore_lib.a
+[ 33%] Built target flashcore_lib
+[ 50%] Building CXX object CMakeFiles/flashcore_tests.dir/tests/tests.cpp.o
+[ 66%] Building CXX object CMakeFiles/flashcore.dir/src/main.cpp.o
+[ 83%] Linking CXX executable flashcore
+[ 83%] Built target flashcore
+[100%] Linking CXX executable flashcore_tests
+[100%] Built target flashcore_tests

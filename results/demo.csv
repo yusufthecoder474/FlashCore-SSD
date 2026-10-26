@@ -1,0 +1,2 @@
+policy,allocation,workload,seed,blocks,pages_per_block,logical_pages,op_pages,operations,trace_hash,host_attempted,host_successful,physical_programs,gc_migrations,gc_cycles,erases,invalid_ops,failed_writes,free_pages,erase_min,erase_max,erase_stddev,waf,wall_seconds,simulator_throughput,correctness_violations,operation_errors,erase_counts,weight,threshold,decay,watermark
+greedy,basic,demo,1,24,8,128,64,6,6843434880818234409,3,3,3,0,0,0,0,0,189,0,0,0,1,7.492e-06,800854.244527,0,0,0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0,0.5,3,256,1

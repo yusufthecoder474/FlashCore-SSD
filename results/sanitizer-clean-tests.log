@@ -1,0 +1,82 @@
+Internal ctest changing into directory: /workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final-sanitize
+Test project /workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final-sanitize
+      Start  1: lifecycle
+ 1/38 Test  #1: lifecycle ........................   Passed    0.01 sec
+      Start  2: erase_guard
+ 2/38 Test  #2: erase_guard ......................   Passed    0.01 sec
+      Start  3: geometry
+ 3/38 Test  #3: geometry .........................   Passed    0.03 sec
+      Start  4: mapping
+ 4/38 Test  #4: mapping ..........................   Passed    0.02 sec
+      Start  5: overwrite
+ 5/38 Test  #5: overwrite ........................   Passed    0.08 sec
+      Start  6: trim
+ 6/38 Test  #6: trim .............................   Passed    0.04 sec
+      Start  7: gc_empty
+ 7/38 Test  #7: gc_empty .........................   Passed    0.16 sec
+      Start  8: gc_mixed
+ 8/38 Test  #8: gc_mixed .........................   Passed    0.48 sec
+      Start  9: gc_preserve
+ 9/38 Test  #9: gc_preserve ......................   Passed    0.03 sec
+      Start 10: wear
+10/38 Test #10: wear .............................   Passed    0.05 sec
+      Start 11: invalid_address
+11/38 Test #11: invalid_address ..................   Passed    0.06 sec
+      Start 12: out_of_space
+12/38 Test #12: out_of_space .....................   Passed    0.04 sec
+      Start 13: bad_block
+13/38 Test #13: bad_block ........................   Passed    0.02 sec
+      Start 14: program_failure
+14/38 Test #14: program_failure ..................   Passed    0.04 sec
+      Start 15: gc_program_failure
+15/38 Test #15: gc_program_failure ...............   Passed    0.05 sec
+      Start 16: gc_erase_failure
+16/38 Test #16: gc_erase_failure .................   Passed    0.07 sec
+      Start 17: retirement
+17/38 Test #17: retirement .......................   Passed    0.11 sec
+      Start 18: retirement_failure
+18/38 Test #18: retirement_failure ...............   Passed    0.07 sec
+      Start 19: counters
+19/38 Test #19: counters .........................   Passed    0.07 sec
+      Start 20: rebuild
+20/38 Test #20: rebuild ..........................   Passed    0.05 sec
+      Start 21: random_greedy
+21/38 Test #21: random_greedy ....................   Passed    4.67 sec
+      Start 22: random_adaptive
+22/38 Test #22: random_adaptive ..................   Passed    3.46 sec
+      Start 23: tie_break
+23/38 Test #23: tie_break ........................   Passed    0.03 sec
+      Start 24: pressure
+24/38 Test #24: pressure .........................   Passed    0.03 sec
+      Start 25: adaptive_choice
+25/38 Test #25: adaptive_choice ..................   Passed    0.03 sec
+      Start 26: decay
+26/38 Test #26: decay ............................   Passed    0.03 sec
+      Start 27: partial_failure_recovery
+27/38 Test #27: partial_failure_recovery .........   Passed    0.03 sec
+      Start 28: rebuild_highest_sequence
+28/38 Test #28: rebuild_highest_sequence .........   Passed    0.02 sec
+      Start 29: active_exclusion
+29/38 Test #29: active_exclusion .................   Passed    0.01 sec
+      Start 30: retire_active
+30/38 Test #30: retire_active ....................   Passed    0.03 sec
+      Start 31: retire_no_reserve
+31/38 Test #31: retire_no_reserve ................   Passed    0.02 sec
+      Start 32: nand_fault_atomicity
+32/38 Test #32: nand_fault_atomicity .............   Passed    0.04 sec
+      Start 33: trim_metrics
+33/38 Test #33: trim_metrics .....................   Passed    0.04 sec
+      Start 34: adaptive_divergence
+34/38 Test #34: adaptive_divergence ..............   Passed    0.07 sec
+      Start 35: cli_demo
+35/38 Test #35: cli_demo .........................   Passed    0.10 sec
+      Start 36: cli_invalid
+36/38 Test #36: cli_invalid ......................   Passed    0.05 sec
+      Start 37: python_contracts
+37/38 Test #37: python_contracts .................   Passed    2.16 sec
+      Start 38: fault_campaign
+38/38 Test #38: fault_campaign ...................   Passed    3.06 sec
+
+100% tests passed, 0 tests failed out of 38
+
+Total Test time (real) =  15.40 sec

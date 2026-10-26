@@ -1,0 +1,484 @@
+Internal ctest changing into directory: /workspace/scratch/ea76aac8878d/FlashCore-SSD/build-sanitize
+Test project /workspace/scratch/ea76aac8878d/FlashCore-SSD/build-sanitize
+      Start  1: lifecycle
+ 1/30 Test  #1: lifecycle ........................***Failed    0.01 sec
+==102==Can't open /proc/101/task for reading.
+==101==LeakSanitizer has encountered a fatal error.
+==101==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==101==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start  2: erase_guard
+ 2/30 Test  #2: erase_guard ......................***Failed    0.01 sec
+==104==Can't open /proc/103/task for reading.
+==103==LeakSanitizer has encountered a fatal error.
+==103==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==103==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start  3: geometry
+ 3/30 Test  #3: geometry .........................***Failed    0.01 sec
+==106==Can't open /proc/105/task for reading.
+==105==LeakSanitizer has encountered a fatal error.
+==105==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==105==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start  4: mapping
+ 4/30 Test  #4: mapping ..........................***Failed    0.01 sec
+==108==Can't open /proc/107/task for reading.
+==107==LeakSanitizer has encountered a fatal error.
+==107==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==107==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start  5: overwrite
+ 5/30 Test  #5: overwrite ........................***Failed    0.04 sec
+==110==Can't open /proc/109/task for reading.
+==109==LeakSanitizer has encountered a fatal error.
+==109==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==109==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start  6: trim
+ 6/30 Test  #6: trim .............................***Failed    0.01 sec
+==112==Can't open /proc/111/task for reading.
+==111==LeakSanitizer has encountered a fatal error.
+==111==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==111==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start  7: gc_empty
+ 7/30 Test  #7: gc_empty .........................***Failed    0.03 sec
+==114==Can't open /proc/113/task for reading.
+==113==LeakSanitizer has encountered a fatal error.
+==113==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==113==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start  8: gc_mixed
+ 8/30 Test  #8: gc_mixed .........................***Failed    0.01 sec
+==116==Can't open /proc/115/task for reading.
+==115==LeakSanitizer has encountered a fatal error.
+==115==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==115==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start  9: gc_preserve
+ 9/30 Test  #9: gc_preserve ......................***Failed    0.01 sec
+==118==Can't open /proc/117/task for reading.
+==117==LeakSanitizer has encountered a fatal error.
+==117==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==117==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start 10: wear
+10/30 Test #10: wear .............................***Failed    0.01 sec
+==120==Can't open /proc/119/task for reading.
+==119==LeakSanitizer has encountered a fatal error.
+==119==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==119==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start 11: invalid_address
+11/30 Test #11: invalid_address ..................***Failed    0.01 sec
+==122==Can't open /proc/121/task for reading.
+==121==LeakSanitizer has encountered a fatal error.
+==121==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==121==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start 12: out_of_space
+12/30 Test #12: out_of_space .....................***Failed    0.01 sec
+==124==Can't open /proc/123/task for reading.
+==123==LeakSanitizer has encountered a fatal error.
+==123==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==123==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start 13: bad_block
+13/30 Test #13: bad_block ........................***Failed    0.02 sec
+==126==Can't open /proc/125/task for reading.
+==125==LeakSanitizer has encountered a fatal error.
+==125==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==125==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start 14: program_failure
+14/30 Test #14: program_failure ..................***Failed    0.01 sec
+==128==Can't open /proc/127/task for reading.
+==127==LeakSanitizer has encountered a fatal error.
+==127==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==127==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start 15: gc_program_failure
+15/30 Test #15: gc_program_failure ...............***Failed    0.01 sec
+==130==Can't open /proc/129/task for reading.
+==129==LeakSanitizer has encountered a fatal error.
+==129==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==129==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start 16: gc_erase_failure
+16/30 Test #16: gc_erase_failure .................***Failed    0.03 sec
+==132==Can't open /proc/131/task for reading.
+==131==LeakSanitizer has encountered a fatal error.
+==131==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==131==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start 17: retirement
+17/30 Test #17: retirement .......................***Failed    0.01 sec
+==134==Can't open /proc/133/task for reading.
+==133==LeakSanitizer has encountered a fatal error.
+==133==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==133==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start 18: retirement_failure
+18/30 Test #18: retirement_failure ...............***Failed    0.01 sec
+==136==Can't open /proc/135/task for reading.
+==135==LeakSanitizer has encountered a fatal error.
+==135==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==135==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start 19: counters
+19/30 Test #19: counters .........................***Failed    0.01 sec
+==138==Can't open /proc/137/task for reading.
+==137==LeakSanitizer has encountered a fatal error.
+==137==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==137==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start 20: rebuild
+20/30 Test #20: rebuild ..........................***Failed    0.02 sec
+==140==Can't open /proc/139/task for reading.
+==139==LeakSanitizer has encountered a fatal error.
+==139==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==139==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start 21: random_greedy
+21/30 Test #21: random_greedy ....................***Failed    1.10 sec
+==142==Can't open /proc/141/task for reading.
+==141==LeakSanitizer has encountered a fatal error.
+==141==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==141==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start 22: random_adaptive
+22/30 Test #22: random_adaptive ..................***Failed    1.20 sec
+==144==Can't open /proc/143/task for reading.
+==143==LeakSanitizer has encountered a fatal error.
+==143==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==143==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start 23: tie_break
+23/30 Test #23: tie_break ........................***Failed    0.01 sec
+==146==Can't open /proc/145/task for reading.
+==145==LeakSanitizer has encountered a fatal error.
+==145==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==145==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start 24: pressure
+24/30 Test #24: pressure .........................***Failed    0.01 sec
+==148==Can't open /proc/147/task for reading.
+==147==LeakSanitizer has encountered a fatal error.
+==147==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==147==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start 25: adaptive_choice
+25/30 Test #25: adaptive_choice ..................***Failed    0.01 sec
+==150==Can't open /proc/149/task for reading.
+==149==LeakSanitizer has encountered a fatal error.
+==149==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==149==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start 26: decay
+26/30 Test #26: decay ............................***Failed    0.02 sec
+==152==Can't open /proc/151/task for reading.
+==151==LeakSanitizer has encountered a fatal error.
+==151==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==151==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start 27: partial_failure_recovery
+27/30 Test #27: partial_failure_recovery .........***Failed    0.02 sec
+==154==Can't open /proc/153/task for reading.
+==153==LeakSanitizer has encountered a fatal error.
+==153==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==153==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start 28: cli_demo
+28/30 Test #28: cli_demo .........................***Failed    0.01 sec
+policy,allocation,workload,seed,blocks,pages_per_block,logical_pages,op_pages,operations,trace_hash,host_attempted,host_successful,physical_programs,gc_migrations,gc_cycles,erases,invalid_ops,failed_writes,free_pages,erase_min,erase_max,erase_stddev,waf,wall_seconds,simulator_throughput,correctness_violations,operation_errors,weight,threshold,decay,watermark
+greedy,basic,demo,1,24,8,128,64,6,6843434880818234409,3,3,3,0,0,0,0,0,189,0,0,0,1,0.000144816,41431.8859794,0,0,0.5,3,256,1
+FlashCore educational simulator: 3 successful writes; WAF=1; correctness violations=0; operation errors=0
+block 0: free=5 valid=1 invalid=2 erases=0 bad=0
+block 1: free=8 valid=0 invalid=0 erases=0 bad=0
+block 2: free=8 valid=0 invalid=0 erases=0 bad=0
+block 3: free=8 valid=0 invalid=0 erases=0 bad=0
+block 4: free=8 valid=0 invalid=0 erases=0 bad=0
+block 5: free=8 valid=0 invalid=0 erases=0 bad=0
+block 6: free=8 valid=0 invalid=0 erases=0 bad=0
+block 7: free=8 valid=0 invalid=0 erases=0 bad=0
+block 8: free=8 valid=0 invalid=0 erases=0 bad=0
+block 9: free=8 valid=0 invalid=0 erases=0 bad=0
+block 10: free=8 valid=0 invalid=0 erases=0 bad=0
+block 11: free=8 valid=0 invalid=0 erases=0 bad=0
+block 12: free=8 valid=0 invalid=0 erases=0 bad=0
+block 13: free=8 valid=0 invalid=0 erases=0 bad=0
+block 14: free=8 valid=0 invalid=0 erases=0 bad=0
+block 15: free=8 valid=0 invalid=0 erases=0 bad=0
+block 16: free=8 valid=0 invalid=0 erases=0 bad=0
+block 17: free=8 valid=0 invalid=0 erases=0 bad=0
+block 18: free=8 valid=0 invalid=0 erases=0 bad=0
+block 19: free=8 valid=0 invalid=0 erases=0 bad=0
+block 20: free=8 valid=0 invalid=0 erases=0 bad=0
+block 21: free=8 valid=0 invalid=0 erases=0 bad=0
+block 22: free=8 valid=0 invalid=0 erases=0 bad=0
+block 23: free=8 valid=0 invalid=0 erases=0 bad=0
+==155==LeakSanitizer has encountered a fatal error.
+==155==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==155==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+      Start 29: cli_invalid
+29/30 Test #29: cli_invalid ......................   Passed    0.01 sec
+      Start 30: python_contracts
+30/30 Test #30: python_contracts .................***Failed    0.64 sec
+.EEEFFFFFFFFFFFFFF.E
+======================================================================
+ERROR: test_corrupt_metrics_rejected (__main__.Contracts.test_corrupt_metrics_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/test_validation.py", line 28, in test_corrupt_metrics_rejected
+    baseline = execute(EXE, ['demo'])
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/run_validation.py", line 73, in execute
+    raise RuntimeError(f'CLI exit {proc.returncode}: {arguments}\n{proc.stdout}\n{proc.stderr}')
+RuntimeError: CLI exit 1: ['demo']
+policy,allocation,workload,seed,blocks,pages_per_block,logical_pages,op_pages,operations,trace_hash,host_attempted,host_successful,physical_programs,gc_migrations,gc_cycles,erases,invalid_ops,failed_writes,free_pages,erase_min,erase_max,erase_stddev,waf,wall_seconds,simulator_throughput,correctness_violations,operation_errors,weight,threshold,decay,watermark
+greedy,basic,demo,1,24,8,128,64,6,6843434880818234409,3,3,3,0,0,0,0,0,189,0,0,0,1,0.000148304,40457.4387744,0,0,0.5,3,256,1
+
+FlashCore educational simulator: 3 successful writes; WAF=1; correctness violations=0; operation errors=0
+block 0: free=5 valid=1 invalid=2 erases=0 bad=0
+block 1: free=8 valid=0 invalid=0 erases=0 bad=0
+block 2: free=8 valid=0 invalid=0 erases=0 bad=0
+block 3: free=8 valid=0 invalid=0 erases=0 bad=0
+block 4: free=8 valid=0 invalid=0 erases=0 bad=0
+block 5: free=8 valid=0 invalid=0 erases=0 bad=0
+block 6: free=8 valid=0 invalid=0 erases=0 bad=0
+block 7: free=8 valid=0 invalid=0 erases=0 bad=0
+block 8: free=8 valid=0 invalid=0 erases=0 bad=0
+block 9: free=8 valid=0 invalid=0 erases=0 bad=0
+block 10: free=8 valid=0 invalid=0 erases=0 bad=0
+block 11: free=8 valid=0 invalid=0 erases=0 bad=0
+block 12: free=8 valid=0 invalid=0 erases=0 bad=0
+block 13: free=8 valid=0 invalid=0 erases=0 bad=0
+block 14: free=8 valid=0 invalid=0 erases=0 bad=0
+block 15: free=8 valid=0 invalid=0 erases=0 bad=0
+block 16: free=8 valid=0 invalid=0 erases=0 bad=0
+block 17: free=8 valid=0 invalid=0 erases=0 bad=0
+block 18: free=8 valid=0 invalid=0 erases=0 bad=0
+block 19: free=8 valid=0 invalid=0 erases=0 bad=0
+block 20: free=8 valid=0 invalid=0 erases=0 bad=0
+block 21: free=8 valid=0 invalid=0 erases=0 bad=0
+block 22: free=8 valid=0 invalid=0 erases=0 bad=0
+block 23: free=8 valid=0 invalid=0 erases=0 bad=0
+==160==LeakSanitizer has encountered a fatal error.
+==160==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==160==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+
+======================================================================
+ERROR: test_csv_input_and_output (__main__.Contracts.test_csv_input_and_output)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/test_validation.py", line 69, in test_csv_input_and_output
+    row = execute(EXE, ['test-workload', '--input', path, '--output', output])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/run_validation.py", line 73, in execute
+    raise RuntimeError(f'CLI exit {proc.returncode}: {arguments}\n{proc.stdout}\n{proc.stderr}')
+RuntimeError: CLI exit 1: ['test-workload', '--input', PosixPath('/tmp/tmpmf25_le0/trace.csv'), '--output', PosixPath('/tmp/tmpmf25_le0/metrics.csv')]
+policy,allocation,workload,seed,blocks,pages_per_block,logical_pages,op_pages,operations,trace_hash,host_attempted,host_successful,physical_programs,gc_migrations,gc_cycles,erases,invalid_ops,failed_writes,free_pages,erase_min,erase_max,erase_stddev,waf,wall_seconds,simulator_throughput,correctness_violations,operation_errors,weight,threshold,decay,watermark
+greedy,basic,test-workload,1,24,8,128,64,4,6455724794636307111,1,1,1,0,0,0,0,0,191,0,0,0,1,0.000286565,13958.4387486,0,0,0.5,3,256,1
+
+FlashCore educational simulator: 1 successful writes; WAF=1; correctness violations=0; operation errors=0
+==162==LeakSanitizer has encountered a fatal error.
+==162==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==162==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+
+======================================================================
+ERROR: test_determinism (__main__.Contracts.test_determinism)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/test_validation.py", line 41, in test_determinism
+    a, b = execute(EXE, args), execute(EXE, args)
+           ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/run_validation.py", line 73, in execute
+    raise RuntimeError(f'CLI exit {proc.returncode}: {arguments}\n{proc.stdout}\n{proc.stderr}')
+RuntimeError: CLI exit 1: ['benchmark', '--seed', '73', '--policy', 'adaptive', '--workload', 'hotcold']
+policy,allocation,workload,seed,blocks,pages_per_block,logical_pages,op_pages,operations,trace_hash,host_attempted,host_successful,physical_programs,gc_migrations,gc_cycles,erases,invalid_ops,failed_writes,free_pages,erase_min,erase_max,erase_stddev,waf,wall_seconds,simulator_throughput,correctness_violations,operation_errors,weight,threshold,decay,watermark
+adaptive,basic,hotcold,73,24,8,128,64,5000,14213973811628621108,5000,5000,11134,6134,1386,1386,0,0,18,0,111,24.3417508272,2.2268,0.201204567,24850.3305593,0,0,0.5,3,256,1
+
+FlashCore educational simulator: 5000 successful writes; WAF=2.2268; correctness violations=0; operation errors=0
+==165==Can't open /proc/164/task for reading.
+==164==LeakSanitizer has encountered a fatal error.
+==164==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==164==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+
+======================================================================
+ERROR: test_policy_same_trace (__main__.Contracts.test_policy_same_trace)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/test_validation.py", line 48, in test_policy_same_trace
+    a = execute(EXE, ['benchmark', '--seed', '88', '--policy', 'greedy'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/run_validation.py", line 73, in execute
+    raise RuntimeError(f'CLI exit {proc.returncode}: {arguments}\n{proc.stdout}\n{proc.stderr}')
+RuntimeError: CLI exit 1: ['benchmark', '--seed', '88', '--policy', 'greedy']
+policy,allocation,workload,seed,blocks,pages_per_block,logical_pages,op_pages,operations,trace_hash,host_attempted,host_successful,physical_programs,gc_migrations,gc_cycles,erases,invalid_ops,failed_writes,free_pages,erase_min,erase_max,erase_stddev,waf,wall_seconds,simulator_throughput,correctness_violations,operation_errors,weight,threshold,decay,watermark
+greedy,basic,uniform,88,24,8,128,64,5000,12129881626755113468,5000,5000,8832,3832,1098,1098,0,0,16,0,60,11.0538454847,1.7664,0.102112005,48965.8390314,0,0,0.5,3,256,1
+
+FlashCore educational simulator: 5000 successful writes; WAF=1.7664; correctness violations=0; operation errors=0
+==197==Can't open /proc/196/task for reading.
+==196==LeakSanitizer has encountered a fatal error.
+==196==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==196==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+
+
+======================================================================
+FAIL: test_invalid_options (__main__.Contracts.test_invalid_options) (args=[])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/test_validation.py", line 62, in test_invalid_options
+    self.assertEqual(proc.returncode, 2)
+AssertionError: 1 != 2
+
+======================================================================
+FAIL: test_invalid_options (__main__.Contracts.test_invalid_options) (args=['wrong'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/test_validation.py", line 62, in test_invalid_options
+    self.assertEqual(proc.returncode, 2)
+AssertionError: 1 != 2
+
+======================================================================
+FAIL: test_invalid_options (__main__.Contracts.test_invalid_options) (args=['benchmark', '--seed', '-1'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/test_validation.py", line 62, in test_invalid_options
+    self.assertEqual(proc.returncode, 2)
+AssertionError: 1 != 2
+
+======================================================================
+FAIL: test_invalid_options (__main__.Contracts.test_invalid_options) (args=['benchmark', '--seed', '4294967296'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/test_validation.py", line 62, in test_invalid_options
+    self.assertEqual(proc.returncode, 2)
+AssertionError: 1 != 2
+
+======================================================================
+FAIL: test_invalid_options (__main__.Contracts.test_invalid_options) (args=['benchmark', '--seed'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/test_validation.py", line 62, in test_invalid_options
+    self.assertEqual(proc.returncode, 2)
+AssertionError: 1 != 2
+
+======================================================================
+FAIL: test_invalid_options (__main__.Contracts.test_invalid_options) (args=['benchmark', '--alloc', 'wrong'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/test_validation.py", line 62, in test_invalid_options
+    self.assertEqual(proc.returncode, 2)
+AssertionError: 1 != 2
+
+======================================================================
+FAIL: test_invalid_options (__main__.Contracts.test_invalid_options) (args=['benchmark', '--pages', '0'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/test_validation.py", line 62, in test_invalid_options
+    self.assertEqual(proc.returncode, 2)
+AssertionError: 1 != 2
+
+======================================================================
+FAIL: test_invalid_options (__main__.Contracts.test_invalid_options) (args=['benchmark', '--policy', 'greedy', '--policy', 'adaptive'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/test_validation.py", line 62, in test_invalid_options
+    self.assertEqual(proc.returncode, 2)
+AssertionError: 1 != 2
+
+======================================================================
+FAIL: test_invalid_options (__main__.Contracts.test_invalid_options) (args=['benchmark', '--weight', 'nan'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/test_validation.py", line 62, in test_invalid_options
+    self.assertEqual(proc.returncode, 2)
+AssertionError: 1 != 2
+
+======================================================================
+FAIL: test_invalid_options (__main__.Contracts.test_invalid_options) (args=['benchmark', '--decay', '0'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/test_validation.py", line 62, in test_invalid_options
+    self.assertEqual(proc.returncode, 2)
+AssertionError: 1 != 2
+
+======================================================================
+FAIL: test_invalid_options (__main__.Contracts.test_invalid_options) (args=['benchmark', '--workload', 'wrong'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/test_validation.py", line 62, in test_invalid_options
+    self.assertEqual(proc.returncode, 2)
+AssertionError: 1 != 2
+
+======================================================================
+FAIL: test_invalid_options (__main__.Contracts.test_invalid_options) (args=['test-workload'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/test_validation.py", line 62, in test_invalid_options
+    self.assertEqual(proc.returncode, 2)
+AssertionError: 1 != 2
+
+======================================================================
+FAIL: test_invalid_options (__main__.Contracts.test_invalid_options) (args=['demo', '--input', 'x'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/test_validation.py", line 62, in test_invalid_options
+    self.assertEqual(proc.returncode, 2)
+AssertionError: 1 != 2
+
+======================================================================
+FAIL: test_invalid_options (__main__.Contracts.test_invalid_options) (args=['benchmark', '--unknown', 'x'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/test_validation.py", line 62, in test_invalid_options
+    self.assertEqual(proc.returncode, 2)
+AssertionError: 1 != 2
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.511s
+
+FAILED (failures=14, errors=4)
+
+
+3% tests passed, 29 tests failed out of 30
+
+Total Test time (real) =   3.33 sec
+
+The following tests FAILED:
+	  1 - lifecycle (Failed)
+	  2 - erase_guard (Failed)
+	  3 - geometry (Failed)
+	  4 - mapping (Failed)
+	  5 - overwrite (Failed)
+	  6 - trim (Failed)
+	  7 - gc_empty (Failed)
+	  8 - gc_mixed (Failed)
+	  9 - gc_preserve (Failed)
+	 10 - wear (Failed)
+	 11 - invalid_address (Failed)
+	 12 - out_of_space (Failed)
+	 13 - bad_block (Failed)
+	 14 - program_failure (Failed)
+	 15 - gc_program_failure (Failed)
+	 16 - gc_erase_failure (Failed)
+	 17 - retirement (Failed)
+	 18 - retirement_failure (Failed)
+	 19 - counters (Failed)
+	 20 - rebuild (Failed)
+	 21 - random_greedy (Failed)
+	 22 - random_adaptive (Failed)
+	 23 - tie_break (Failed)
+	 24 - pressure (Failed)
+	 25 - adaptive_choice (Failed)
+	 26 - decay (Failed)
+	 27 - partial_failure_recovery (Failed)
+	 28 - cli_demo (Failed)
+	 30 - python_contracts (Failed)
+Errors while running CTest

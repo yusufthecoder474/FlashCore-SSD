@@ -1,0 +1,5 @@
+blocks,pages,logical,exit,reason
+2,4,1,2,"ERROR: geometry needs >=3 blocks, positive pages/logical and >one block OP; maximum 1M pages"
+4,0,1,2,"ERROR: geometry needs >=3 blocks, positive pages/logical and >one block OP; maximum 1M pages"
+4,2,6,2,"ERROR: geometry needs >=3 blocks, positive pages/logical and >one block OP; maximum 1M pages"
+0,2,1,2,"ERROR: geometry needs >=3 blocks, positive pages/logical and >one block OP; maximum 1M pages"

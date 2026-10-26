@@ -1,0 +1,16 @@
+[ 16%] Building CXX object CMakeFiles/flashcore_lib.dir/src/flashcore.cpp.o
+[ 33%] Linking CXX static library libflashcore_lib.a
+[ 33%] Built target flashcore_lib
+[ 50%] Building CXX object CMakeFiles/flashcore_tests.dir/tests/tests.cpp.o
+[ 66%] Building CXX object CMakeFiles/flashcore.dir/src/main.cpp.o
+/workspace/scratch/ea76aac8878d/FlashCore-SSD/src/main.cpp: In function ‘int main(int, char**)’:
+/workspace/scratch/ea76aac8878d/FlashCore-SSD/src/main.cpp:84:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   84 |    if(!options.count("--input")) throw std::invalid_argument("missing --input"); trace=load(options.at("--input"));
+      |    ^~
+/workspace/scratch/ea76aac8878d/FlashCore-SSD/src/main.cpp:84:82: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   84 |    if(!options.count("--input")) throw std::invalid_argument("missing --input"); trace=load(options.at("--input"));
+      |                                                                                  ^~~~~
+[ 83%] Linking CXX executable flashcore
+[100%] Linking CXX executable flashcore_tests
+[100%] Built target flashcore
+[100%] Built target flashcore_tests

@@ -1,0 +1,24 @@
+[
+  {
+    "command": [
+      "FlashCore-SSD/build-bug/flashcore_tests",
+      "trim"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "FAIL: /workspace/scratch/ea76aac8878d/FlashCore-SSD/tests/tests.cpp:23 f.violations() == 0\n"
+  },
+  {
+    "command": [
+      "FlashCore-SSD/build-bug/flashcore",
+      "test-workload",
+      "--input",
+      "FlashCore-SSD/workloads/trim-reproducer.csv",
+      "--seed",
+      "0"
+    ],
+    "exit": 1,
+    "stdout": "policy,allocation,workload,seed,blocks,pages_per_block,logical_pages,op_pages,operations,trace_hash,host_attempted,host_successful,physical_programs,gc_migrations,gc_cycles,erases,invalid_ops,failed_writes,free_pages,erase_min,erase_max,erase_stddev,waf,wall_seconds,simulator_throughput,correctness_violations,operation_errors,erase_counts,weight,threshold,decay,watermark\ngreedy,basic,test-workload,0,24,8,128,64,2,3462122158795348090,1,1,1,0,0,0,0,0,191,0,0,0,1,1.4222e-05,140627.1973,2,0,0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0,0.5,3,256,1\n",
+    "stderr": "FlashCore educational simulator: 1 successful writes; WAF=1; correctness violations=2; operation errors=0\n"
+  }
+]

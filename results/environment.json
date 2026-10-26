@@ -1,0 +1,41 @@
+{
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "commands": [
+    {
+      "command": [
+        "uname",
+        "-a"
+      ],
+      "exit": 0,
+      "stdout": "Linux d47ac5475eff 6.18.55 #1 SMP Wed Oct 14 19:45:18 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "g++",
+        "--version"
+      ],
+      "exit": 0,
+      "stdout": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "cmake",
+        "--version"
+      ],
+      "exit": 0,
+      "stdout": "cmake version 3.28.3\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "--version"
+      ],
+      "exit": 0,
+      "stdout": "Python 3.12.14\n",
+      "stderr": ""
+    }
+  ]
+}

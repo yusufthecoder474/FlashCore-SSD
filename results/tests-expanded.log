@@ -1,0 +1,80 @@
+Internal ctest changing into directory: /workspace/scratch/ea76aac8878d/FlashCore-SSD/build
+Test project /workspace/scratch/ea76aac8878d/FlashCore-SSD/build
+      Start  1: lifecycle
+ 1/37 Test  #1: lifecycle ........................   Passed    0.01 sec
+      Start  2: erase_guard
+ 2/37 Test  #2: erase_guard ......................   Passed    0.01 sec
+      Start  3: geometry
+ 3/37 Test  #3: geometry .........................   Passed    0.00 sec
+      Start  4: mapping
+ 4/37 Test  #4: mapping ..........................   Passed    0.00 sec
+      Start  5: overwrite
+ 5/37 Test  #5: overwrite ........................   Passed    0.01 sec
+      Start  6: trim
+ 6/37 Test  #6: trim .............................   Passed    0.01 sec
+      Start  7: gc_empty
+ 7/37 Test  #7: gc_empty .........................   Passed    0.00 sec
+      Start  8: gc_mixed
+ 8/37 Test  #8: gc_mixed .........................   Passed    0.01 sec
+      Start  9: gc_preserve
+ 9/37 Test  #9: gc_preserve ......................   Passed    0.00 sec
+      Start 10: wear
+10/37 Test #10: wear .............................   Passed    0.00 sec
+      Start 11: invalid_address
+11/37 Test #11: invalid_address ..................   Passed    0.00 sec
+      Start 12: out_of_space
+12/37 Test #12: out_of_space .....................   Passed    0.00 sec
+      Start 13: bad_block
+13/37 Test #13: bad_block ........................   Passed    0.00 sec
+      Start 14: program_failure
+14/37 Test #14: program_failure ..................   Passed    0.00 sec
+      Start 15: gc_program_failure
+15/37 Test #15: gc_program_failure ...............   Passed    0.01 sec
+      Start 16: gc_erase_failure
+16/37 Test #16: gc_erase_failure .................   Passed    0.00 sec
+      Start 17: retirement
+17/37 Test #17: retirement .......................   Passed    0.00 sec
+      Start 18: retirement_failure
+18/37 Test #18: retirement_failure ...............   Passed    0.00 sec
+      Start 19: counters
+19/37 Test #19: counters .........................   Passed    0.00 sec
+      Start 20: rebuild
+20/37 Test #20: rebuild ..........................   Passed    0.00 sec
+      Start 21: random_greedy
+21/37 Test #21: random_greedy ....................   Passed    0.20 sec
+      Start 22: random_adaptive
+22/37 Test #22: random_adaptive ..................   Passed    0.19 sec
+      Start 23: tie_break
+23/37 Test #23: tie_break ........................   Passed    0.00 sec
+      Start 24: pressure
+24/37 Test #24: pressure .........................   Passed    0.00 sec
+      Start 25: adaptive_choice
+25/37 Test #25: adaptive_choice ..................   Passed    0.00 sec
+      Start 26: decay
+26/37 Test #26: decay ............................   Passed    0.00 sec
+      Start 27: partial_failure_recovery
+27/37 Test #27: partial_failure_recovery .........   Passed    0.01 sec
+      Start 28: rebuild_highest_sequence
+28/37 Test #28: rebuild_highest_sequence .........   Passed    0.00 sec
+      Start 29: active_exclusion
+29/37 Test #29: active_exclusion .................   Passed    0.00 sec
+      Start 30: retire_active
+30/37 Test #30: retire_active ....................   Passed    0.00 sec
+      Start 31: retire_no_reserve
+31/37 Test #31: retire_no_reserve ................   Passed    0.01 sec
+      Start 32: nand_fault_atomicity
+32/37 Test #32: nand_fault_atomicity .............   Passed    0.00 sec
+      Start 33: trim_metrics
+33/37 Test #33: trim_metrics .....................   Passed    0.00 sec
+      Start 34: adaptive_divergence
+34/37 Test #34: adaptive_divergence ..............   Passed    0.00 sec
+      Start 35: cli_demo
+35/37 Test #35: cli_demo .........................   Passed    0.00 sec
+      Start 36: cli_invalid
+36/37 Test #36: cli_invalid ......................   Passed    0.00 sec
+      Start 37: python_contracts
+37/37 Test #37: python_contracts .................   Passed    0.47 sec
+
+100% tests passed, 0 tests failed out of 37
+
+Total Test time (real) =   1.01 sec

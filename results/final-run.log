@@ -1,0 +1,12 @@
+PASS: /usr/bin/cmake -S /workspace/scratch/ea76aac8878d/FlashCore-SSD -B /workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final -DCMAKE_BUILD_TYPE=Release -DFLASHCORE_SANITIZE=OFF
+PASS: /usr/bin/cmake --build /workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final --config Release --parallel 2
+PASS: /usr/bin/ctest --test-dir /workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final -C Release --output-on-failure
+PASS: /workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final/flashcore demo --output /workspace/scratch/ea76aac8878d/FlashCore-SSD/results/demo.csv
+PASS: /workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final/flashcore test-workload --input /workspace/scratch/ea76aac8878d/FlashCore-SSD/workloads/trim-reproducer.csv
+PASS: /workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final/fault_campaign
+PASS: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/ea76aac8878d/FlashCore-SSD/python/run_validation.py --exe /workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final/flashcore --mode evaluation --output /workspace/scratch/ea76aac8878d/FlashCore-SSD/results
+PASS: /usr/bin/cmake -S /workspace/scratch/ea76aac8878d/FlashCore-SSD -B /workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final-bug -DFLASHCORE_BUG_TRIM=ON -DCMAKE_BUILD_TYPE=Release
+PASS: /usr/bin/cmake --build /workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final-bug --config Release --parallel 2
+PASS: /workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final-bug/flashcore_tests trim
+PASS: /workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final-bug/flashcore test-workload --input /workspace/scratch/ea76aac8878d/FlashCore-SSD/workloads/trim-reproducer.csv --seed 0
+Evidence written to /workspace/scratch/ea76aac8878d/FlashCore-SSD/results/reproduction.json

@@ -1,0 +1,166 @@
+{
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "sanitizers": false,
+  "leak_check_disabled": false,
+  "commands": [
+    {
+      "command": [
+        "/usr/bin/cmake",
+        "-S",
+        "/workspace/scratch/ea76aac8878d/FlashCore-SSD",
+        "-B",
+        "/workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DFLASHCORE_SANITIZE=OFF"
+      ],
+      "cwd": "/workspace/scratch/ea76aac8878d/FlashCore-SSD",
+      "exit": 0,
+      "expected_exit": 0,
+      "stdout": "-- The CXX compiler identification is GNU 13.3.0\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++ - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Found Python3: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 (found version \"3.12.14\") found components: Interpreter \n-- Configuring done (0.5s)\n-- Generating done (0.0s)\n-- Build files have been written to: /workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/cmake",
+        "--build",
+        "/workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final",
+        "--config",
+        "Release",
+        "--parallel",
+        "2"
+      ],
+      "cwd": "/workspace/scratch/ea76aac8878d/FlashCore-SSD",
+      "exit": 0,
+      "expected_exit": 0,
+      "stdout": "[ 12%] Building CXX object CMakeFiles/flashcore_lib.dir/src/flashcore.cpp.o\n[ 25%] Linking CXX static library libflashcore_lib.a\n[ 25%] Built target flashcore_lib\n[ 37%] Building CXX object CMakeFiles/flashcore_tests.dir/tests/tests.cpp.o\n[ 50%] Building CXX object CMakeFiles/flashcore.dir/src/main.cpp.o\n[ 62%] Linking CXX executable flashcore\n[ 62%] Built target flashcore\n[ 75%] Building CXX object CMakeFiles/fault_campaign.dir/tests/fault_campaign.cpp.o\n[ 87%] Linking CXX executable flashcore_tests\n[ 87%] Built target flashcore_tests\n[100%] Linking CXX executable fault_campaign\n[100%] Built target fault_campaign\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/ctest",
+        "--test-dir",
+        "/workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final",
+        "-C",
+        "Release",
+        "--output-on-failure"
+      ],
+      "cwd": "/workspace/scratch/ea76aac8878d/FlashCore-SSD",
+      "exit": 0,
+      "expected_exit": 0,
+      "stdout": "Internal ctest changing into directory: /workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final\nTest project /workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final\n      Start  1: lifecycle\n 1/38 Test  #1: lifecycle ........................   Passed    0.01 sec\n      Start  2: erase_guard\n 2/38 Test  #2: erase_guard ......................   Passed    0.01 sec\n      Start  3: geometry\n 3/38 Test  #3: geometry .........................   Passed    0.00 sec\n      Start  4: mapping\n 4/38 Test  #4: mapping ..........................   Passed    0.01 sec\n      Start  5: overwrite\n 5/38 Test  #5: overwrite ........................   Passed    0.00 sec\n      Start  6: trim\n 6/38 Test  #6: trim .............................   Passed    0.00 sec\n      Start  7: gc_empty\n 7/38 Test  #7: gc_empty .........................   Passed    0.01 sec\n      Start  8: gc_mixed\n 8/38 Test  #8: gc_mixed .........................   Passed    0.00 sec\n      Start  9: gc_preserve\n 9/38 Test  #9: gc_preserve ......................   Passed    0.00 sec\n      Start 10: wear\n10/38 Test #10: wear .............................   Passed    0.01 sec\n      Start 11: invalid_address\n11/38 Test #11: invalid_address ..................   Passed    0.01 sec\n      Start 12: out_of_space\n12/38 Test #12: out_of_space .....................   Passed    0.01 sec\n      Start 13: bad_block\n13/38 Test #13: bad_block ........................   Passed    0.01 sec\n      Start 14: program_failure\n14/38 Test #14: program_failure ..................   Passed    0.01 sec\n      Start 15: gc_program_failure\n15/38 Test #15: gc_program_failure ...............   Passed    0.01 sec\n      Start 16: gc_erase_failure\n16/38 Test #16: gc_erase_failure .................   Passed    0.00 sec\n      Start 17: retirement\n17/38 Test #17: retirement .......................   Passed    0.02 sec\n      Start 18: retirement_failure\n18/38 Test #18: retirement_failure ...............   Passed    0.01 sec\n      Start 19: counters\n19/38 Test #19: counters .........................   Passed    0.01 sec\n      Start 20: rebuild\n20/38 Test #20: rebuild ..........................   Passed    0.01 sec\n      Start 21: random_greedy\n21/38 Test #21: random_greedy ....................   Passed    0.10 sec\n      Start 22: random_adaptive\n22/38 Test #22: random_adaptive ..................   Passed    0.03 sec\n      Start 23: tie_break\n23/38 Test #23: tie_break ........................   Passed    0.00 sec\n      Start 24: pressure\n24/38 Test #24: pressure .........................   Passed    0.00 sec\n      Start 25: adaptive_choice\n25/38 Test #25: adaptive_choice ..................   Passed    0.01 sec\n      Start 26: decay\n26/38 Test #26: decay ............................   Passed    0.00 sec\n      Start 27: partial_failure_recovery\n27/38 Test #27: partial_failure_recovery .........   Passed    0.00 sec\n      Start 28: rebuild_highest_sequence\n28/38 Test #28: rebuild_highest_sequence .........   Passed    0.01 sec\n      Start 29: active_exclusion\n29/38 Test #29: active_exclusion .................   Passed    0.01 sec\n      Start 30: retire_active\n30/38 Test #30: retire_active ....................   Passed    0.00 sec\n      Start 31: retire_no_reserve\n31/38 Test #31: retire_no_reserve ................   Passed    0.00 sec\n      Start 32: nand_fault_atomicity\n32/38 Test #32: nand_fault_atomicity .............   Passed    0.00 sec\n      Start 33: trim_metrics\n33/38 Test #33: trim_metrics .....................   Passed    0.01 sec\n      Start 34: adaptive_divergence\n34/38 Test #34: adaptive_divergence ..............   Passed    0.01 sec\n      Start 35: cli_demo\n35/38 Test #35: cli_demo .........................   Passed    0.01 sec\n      Start 36: cli_invalid\n36/38 Test #36: cli_invalid ......................   Passed    0.00 sec\n      Start 37: python_contracts\n37/38 Test #37: python_contracts .................   Passed    0.27 sec\n      Start 38: fault_campaign\n38/38 Test #38: fault_campaign ...................   Passed    0.04 sec\n\n100% tests passed, 0 tests failed out of 38\n\nTotal Test time (real) =   0.69 sec\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final/flashcore",
+        "demo",
+        "--output",
+        "/workspace/scratch/ea76aac8878d/FlashCore-SSD/results/demo.csv"
+      ],
+      "cwd": "/workspace/scratch/ea76aac8878d/FlashCore-SSD",
+      "exit": 0,
+      "expected_exit": 0,
+      "stdout": "policy,allocation,workload,seed,blocks,pages_per_block,logical_pages,op_pages,operations,trace_hash,host_attempted,host_successful,physical_programs,gc_migrations,gc_cycles,erases,invalid_ops,failed_writes,free_pages,erase_min,erase_max,erase_stddev,waf,wall_seconds,simulator_throughput,correctness_violations,operation_errors,erase_counts,weight,threshold,decay,watermark\ngreedy,basic,demo,1,24,8,128,64,6,6843434880818234409,3,3,3,0,0,0,0,0,189,0,0,0,1,7.492e-06,800854.244527,0,0,0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0,0.5,3,256,1\n",
+      "stderr": "FlashCore educational simulator: 3 successful writes; WAF=1; correctness violations=0; operation errors=0\nblock 0: free=5 valid=1 invalid=2 erases=0 bad=0\nblock 1: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 2: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 3: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 4: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 5: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 6: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 7: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 8: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 9: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 10: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 11: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 12: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 13: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 14: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 15: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 16: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 17: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 18: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 19: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 20: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 21: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 22: free=8 valid=0 invalid=0 erases=0 bad=0\nblock 23: free=8 valid=0 invalid=0 erases=0 bad=0\n"
+    },
+    {
+      "command": [
+        "/workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final/flashcore",
+        "test-workload",
+        "--input",
+        "/workspace/scratch/ea76aac8878d/FlashCore-SSD/workloads/trim-reproducer.csv"
+      ],
+      "cwd": "/workspace/scratch/ea76aac8878d/FlashCore-SSD",
+      "exit": 0,
+      "expected_exit": 0,
+      "stdout": "policy,allocation,workload,seed,blocks,pages_per_block,logical_pages,op_pages,operations,trace_hash,host_attempted,host_successful,physical_programs,gc_migrations,gc_cycles,erases,invalid_ops,failed_writes,free_pages,erase_min,erase_max,erase_stddev,waf,wall_seconds,simulator_throughput,correctness_violations,operation_errors,erase_counts,weight,threshold,decay,watermark\ngreedy,basic,test-workload,1,24,8,128,64,2,3462122158795348090,1,1,1,0,0,0,0,0,191,0,0,0,1,4.533e-06,441208.91242,0,0,0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0,0.5,3,256,1\n",
+      "stderr": "FlashCore educational simulator: 1 successful writes; WAF=1; correctness violations=0; operation errors=0\n"
+    },
+    {
+      "command": [
+        "/workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final/fault_campaign"
+      ],
+      "cwd": "/workspace/scratch/ea76aac8878d/FlashCore-SSD",
+      "exit": 0,
+      "expected_exit": 0,
+      "stdout": "PASS: 18000 operations, 946 expected failed writes, 24 successful retirements\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/ea76aac8878d/FlashCore-SSD/python/run_validation.py",
+        "--exe",
+        "/workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final/flashcore",
+        "--mode",
+        "evaluation",
+        "--output",
+        "/workspace/scratch/ea76aac8878d/FlashCore-SSD/results"
+      ],
+      "cwd": "/workspace/scratch/ea76aac8878d/FlashCore-SSD",
+      "exit": 0,
+      "expected_exit": 0,
+      "stdout": "PASS: 80 held-out runs; 72 compatibility runs; 4 expected rejected geometries\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/cmake",
+        "-S",
+        "/workspace/scratch/ea76aac8878d/FlashCore-SSD",
+        "-B",
+        "/workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final-bug",
+        "-DFLASHCORE_BUG_TRIM=ON",
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "cwd": "/workspace/scratch/ea76aac8878d/FlashCore-SSD",
+      "exit": 0,
+      "expected_exit": 0,
+      "stdout": "-- The CXX compiler identification is GNU 13.3.0\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++ - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Found Python3: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 (found version \"3.12.14\") found components: Interpreter \n-- Configuring done (0.5s)\n-- Generating done (0.0s)\n-- Build files have been written to: /workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final-bug\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/cmake",
+        "--build",
+        "/workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final-bug",
+        "--config",
+        "Release",
+        "--parallel",
+        "2"
+      ],
+      "cwd": "/workspace/scratch/ea76aac8878d/FlashCore-SSD",
+      "exit": 0,
+      "expected_exit": 0,
+      "stdout": "[ 12%] Building CXX object CMakeFiles/flashcore_lib.dir/src/flashcore.cpp.o\n[ 25%] Linking CXX static library libflashcore_lib.a\n[ 25%] Built target flashcore_lib\n[ 37%] Building CXX object CMakeFiles/flashcore.dir/src/main.cpp.o\n[ 50%] Building CXX object CMakeFiles/flashcore_tests.dir/tests/tests.cpp.o\n[ 62%] Linking CXX executable flashcore\n[ 62%] Built target flashcore\n[ 75%] Building CXX object CMakeFiles/fault_campaign.dir/tests/fault_campaign.cpp.o\n[ 87%] Linking CXX executable flashcore_tests\n[ 87%] Built target flashcore_tests\n[100%] Linking CXX executable fault_campaign\n[100%] Built target fault_campaign\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final-bug/flashcore_tests",
+        "trim"
+      ],
+      "cwd": "/workspace/scratch/ea76aac8878d/FlashCore-SSD",
+      "exit": 1,
+      "expected_exit": 1,
+      "stdout": "",
+      "stderr": "FAIL: /workspace/scratch/ea76aac8878d/FlashCore-SSD/tests/tests.cpp:23 f.violations() == 0\n"
+    },
+    {
+      "command": [
+        "/workspace/scratch/ea76aac8878d/FlashCore-SSD/build-final-bug/flashcore",
+        "test-workload",
+        "--input",
+        "/workspace/scratch/ea76aac8878d/FlashCore-SSD/workloads/trim-reproducer.csv",
+        "--seed",
+        "0"
+      ],
+      "cwd": "/workspace/scratch/ea76aac8878d/FlashCore-SSD",
+      "exit": 1,
+      "expected_exit": 1,
+      "stdout": "policy,allocation,workload,seed,blocks,pages_per_block,logical_pages,op_pages,operations,trace_hash,host_attempted,host_successful,physical_programs,gc_migrations,gc_cycles,erases,invalid_ops,failed_writes,free_pages,erase_min,erase_max,erase_stddev,waf,wall_seconds,simulator_throughput,correctness_violations,operation_errors,erase_counts,weight,threshold,decay,watermark\ngreedy,basic,test-workload,0,24,8,128,64,2,3462122158795348090,1,1,1,0,0,0,0,0,191,0,0,0,1,4.902e-06,407996.736026,2,0,0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0,0.5,3,256,1\n",
+      "stderr": "FlashCore educational simulator: 1 successful writes; WAF=1; correctness violations=2; operation errors=0\n"
+    }
+  ]
+}

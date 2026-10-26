@@ -1,0 +1,52 @@
+{
+  "parameters": {
+    "weight": 0.5,
+    "threshold": 3,
+    "decay": 256,
+    "watermark": 1
+  },
+  "development_seeds": [
+    11,
+    12
+  ],
+  "evaluation_seeds": [
+    101,
+    102,
+    103,
+    104,
+    105
+  ],
+  "selection": "lowest mean development WAF; first candidate wins ties",
+  "candidate_mean_waf": [
+    1.559194172925,
+    1.55334654355,
+    1.56623112105
+  ],
+  "candidate_parameters": [
+    {
+      "weight": 0.25,
+      "threshold": 2,
+      "decay": 128,
+      "watermark": 0
+    },
+    {
+      "weight": 0.5,
+      "threshold": 3,
+      "decay": 256,
+      "watermark": 1
+    },
+    {
+      "weight": 1.0,
+      "threshold": 2,
+      "decay": 512,
+      "watermark": 1
+    }
+  ],
+  "geometry": {
+    "blocks": 24,
+    "pages": 8,
+    "logical": 128
+  },
+  "operations": 5000,
+  "wear_acceptability": "adaptive mean erase stddev <= 1.10 * greedy, per workload/allocation; exploratory threshold"
+}
