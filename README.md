@@ -69,7 +69,20 @@ python3 python/run_validation.py --exe build/flashcore --mode evaluation
 python3 python/reproduce.py --build build-new
 ```
 
-### Windows 11 / PowerShell (commands supplied, not executed)
+### Windows 11 / PowerShell (verified with MSVC 19.44)
+
+**Windows 11 verification — 26 October 2026**
+
+- Compiler: MSVC 19.44 (Visual Studio 2022)
+- CMake Release build: PASSED
+- CTest: 38/38 passed (100%)
+- Total CTest execution time: 4.87 seconds
+- Python validation: 80 held-out runs passed
+- Compatibility validation: 72 runs passed
+- Invalid geometries: 4 expected rejections
+- Python version: 3.12.10
+
+These results were verified locally on Windows 11.
 
 Install Visual Studio Build Tools with Desktop development with C++, CMake and
 Python 3. Open Developer PowerShell for VS and change into the extracted folder.
@@ -162,7 +175,7 @@ frozen development controls, citations and limits: docs/RESEARCH_COMPARISON.md.
 
 ## Limitations and honest claims
 
-Windows/MSVC and hosted CI unverified. LeakSanitizer unavailable on this host.
+Windows/MSVC Release build, CTest, and Python validation were verified locally on Windows 11. Windows sanitizer execution and hosted GitHub Actions remain unverified. LeakSanitizer unavailable on this host.
 No real hardware, ECC, bit faults, NAND timings, NVMe/PCIe, static wear leveling,
 wear-out limits, persistent device state, crash consistency or sudden unreadable
 bad-block recovery. Planned retirement can exhaust reserve space. A partial
