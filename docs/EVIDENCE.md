@@ -21,6 +21,32 @@ required installation paths.
 - Fixed minimal reproducer: exit 0; no correctness violations.
 - Final release and sanitizer builds: no compiler warnings observed.
 
+## Windows 11 / MSVC Verification — 26 October 2026
+
+**Environment:**
+- Windows 11 (build 10.0.26200.9711)
+- Visual Studio 2022 Build Tools
+- MSVC 19.44.35229.0
+- Python 3.12.10
+- CMake generator: Visual Studio 17 2022
+
+**Commands executed:**
+```powershell
+cmake -S . -B build-win
+cmake --build build-win --config Release
+ctest --test-dir build-win -C Release --output-on-failure
+python python/run_validation.py --exe build-win/Release/flashcore.exe --mode evaluation
+```
+
+**Observed results:**
+- CMake configuration and Release compilation: PASSED
+- CTest: 38/38 passed, 0 failed (4.87 seconds)
+- Held-out benchmark runs: 80 passed
+- Compatibility runs: 72 passed
+- Invalid geometries: 4 expected rejections
+
+These results were verified locally on Windows 11. Windows sanitizer execution and hosted CI are not established by these results.
+
 ## Exact principal commands from scratch parent
 
 ```sh
@@ -58,10 +84,11 @@ header+row output. `compare_policies.py` handles consolidated multi-row CSV.
 `bug-detection.json`: intentionally failing TRIM experiment; reproduced in the
 clean final bug build in reproduction.json.
 
-Windows/MSVC, MSVC ASan, hosted GitHub Actions, leak checking and hardware testing:
-NOT EXECUTED / unsupported here. No unresolved correctness defect observed within
-executed tests. Partial-migration capacity loss is a documented policy boundary,
-not a promise of forward progress. No coverage percentage or real-device result.
+Windows 11/MSVC Release build, CTest (38/38), and Python evaluation (80 held-out runs and 72 compatibility runs) were verified locally on 26 October 2026.
+
+MSVC AddressSanitizer, hosted GitHub Actions, leak detection, and physical SSD hardware testing remain unverified. No unresolved correctness defect was observed in the executed tests.
+
+Partial-migration capacity loss is a documented limitation. No code coverage percentage or real-device performance result is claimed.
 
 ## Benchmark overview
 
